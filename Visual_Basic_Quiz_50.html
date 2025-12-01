@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Visual Basic Quiz Exam</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    .fade-in { animation: fadeIn 0.5s ease both; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px);} to { opacity:1; transform: none; } }
+    .correct { background-color: rgba(16,185,129,0.08); border-color: rgba(16,185,129,0.2); }
+    .wrong { background-color: rgba(239,68,68,0.06); border-color: rgba(239,68,68,0.18); }
+    .selected {
+      border-color: #4f46e5 !important; /* indigo-600 */
+      background-color: #eef2ff; /* indigo-50 */
+    }
+    .option-label { cursor: pointer; }
+    .badge { font-weight: 600; }
+    body { font-family: 'Inter', sans-serif; }
+    .transitions { transition: background-color 0.2s ease, border-color 0.2s ease; }
+  </style>
+</head>
+<body class="bg-slate-100 text-gray-900">
+  <div class="max-w-4xl mx-auto p-4 sm:p-6">
+    <header class="mb-8 text-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-8 rounded-xl shadow-lg">
+      <h1 class="text-4xl font-extrabold">Visual Basic Quiz Exam</h1>
+      <p class="mt-2 text-indigo-200">Select one answer per question. Click <span class="font-semibold">Submit Quiz</span> to see your score.</p>
+    </header>
+    <div class="flex flex-center p-4">
+      <button id="showAnswersBtn" class="px-5 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 shadow-sm transitions">Show All Answers</button>
+    </div>
+    <form id="quizForm" class="space-y-4 bg-white p-4 sm:p-6 rounded-xl shadow-lg">
+      <!-- Questions will be injected here -->
+    </form>
+
+    <div class="mt-6 flex flex-wrap gap-3">
+      <button id="submitBtn" class="px-5 py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 shadow-sm transitions">Submit Quiz</button>
+      <button id="resetBtn" class="px-5 py-2.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 shadow-sm transitions">Reset</button>
+      <div class="flex-grow"></div>
+    </div>
+
+    <div id="resultCard" class="mt-8 hidden p-6 rounded-xl shadow-lg fade-in bg-white">
+      <h2 class="text-xl font-bold">Results</h2>
+      <p id="scoreText" class="mt-2 text-lg"></p>
+      <div id="breakdown" class="mt-4 text-sm text-gray-700 space-y-3"></div>
+    </div>
+
+    <footer class="mt-8 text-xs text-gray-500">
+      Generated interactive quiz — good luck!
+    </footer>
+  </div>
+
+<script src="visual_basic_quiz_50_script.js" defer></script>
+</body>
+</html>

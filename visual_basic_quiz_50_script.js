@@ -6,7 +6,7 @@ const questions = [
 {"q":"Which of the following applications can be developed using Visual Basic tool?","opts":["Graphical User Interface","Real-time","Character User Interface","All of the mentioned"],"a":3},
 {"q":"In Visual Basic, which of the following is used for coding single-alternative and dual-alternative selection structures?","opts":["Switch-Case block","If…Then…Else statement","function overloading","Recursion"],"a":1},
 {"q":"What will be the output of the following Visual Basic code, If the intnumber variable is 110? If intnumber<=100 Then Intnumber=intnumber*2; Else Intnumber=intnumber*3; EndIf","opts":["180","330","156","270"],"a":1},
-{"q":"In the Visual Basic application, which of the following are listed in a properties window?","opts":["Items","Values","Attributes","Objects"],"a":1},
+{"q":"In the Visual Basic application, which of the following are listed in a properties window?","opts":["Items","Values","Attributes","Objects"],"a":2},
 {"q":"What happens when minimize box is set to true?","opts":["Minimize box in title bar disappears","Minimize box is disabled","Minimize box is enabled","Minimize box becomes visible"],"a":2},
 {"q":"Which of the following is commonly used to perform an immediate action when clicked in Visual Studio?","opts":["Button control","Close","End","Exit"],"a":0},
 {"q":"In the following Visual Basic code, what will be in msg, if str contains “visual basic”? Dim str as String Dim msg as String If str.toUpper = \"VISUAL BASIC\" msg=\"VB.Net\" Else msg=\"Not Visual Basic\" EndIf","opts":["Not Visual Basic","VB.Net","Logical Error","Compiler Error"],"a":1},
